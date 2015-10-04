@@ -1,0 +1,2 @@
+echo off
+set PATH=%PATH%;<PYTHON_PATH>;<PHANTOMJS_PATH>
