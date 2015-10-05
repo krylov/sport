@@ -1,0 +1,7 @@
+# Command files #
+#################
+*.cmd
+
+# Compiled source #
+###################
+*.pyc
