@@ -22,7 +22,7 @@ def log_path():
 	return SPORT_PATH + LOG_FOLDER + '\\'
 
 def odds_path():
-	return SPORT_PATH + ODDS_FOLDER + '\\'
+	return ODDS_PATH
 	
 def temp_path():
 	return SPORT_PATH + TEMP_FOLDER + '\\'	
@@ -45,4 +45,9 @@ def ignored_urls_path():
 if 'SPORT_PATH' in os.environ:
 	SPORT_PATH = os.environ['SPORT_PATH']
 else:
-	print 'It is need SPORT_PATH var in system environment.'	
+	print 'It is need SPORT_PATH var in system environment.'
+
+if 'ODDS_PATH' in os.environ:
+	ODDS_PATH = os.environ['ODDS_PATH']
+else:
+	print 'It is need ODDS_PATH var in system environment.'		

@@ -5,3 +5,10 @@
 # Compiled source #
 ###################
 *.pyc
+
+# Other files #
+###############
+error.log
+error.txt
+match_odd_urls.lst
+odds.cookies

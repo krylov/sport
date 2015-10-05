@@ -170,11 +170,13 @@ def load_match_odds(url):
 	full_command = 'phantomjs --cookies-file=odds.cookies odds.js --match-url=' + url
 	print 'Full command: %s' % full_command	
 	subprocess.call(full_command)
+	print 'Completed.'
 	
 def load_match_urls(url):
 	full_command = 'phantomjs --cookies-file=odds.cookies odds.js --season-url=' + url
 	print 'Full command: %s' % full_command
-	subprocess.call(full_command)	
+	subprocess.call(full_command)
+	print 'Completed.'
 	
 def load_all_odds(match_url):
 	#print 'match_url: %s' % match_url
@@ -277,12 +279,4 @@ def main():
 			set_odds_format()
 			load_all_match_urls(args.season_url)
 			
-
-
-#http://www.oddsportal.com/soccer/germany/bundesliga-2011-2012/hamburger-hannover-MZsVFpPR/
-#http://www.oddsportal.com/soccer/england/premier-league-2011-2012/west-brom-arsenal-bZ9OGeoM/
-# season url: http://www.oddsportal.com/soccer/germany/bundesliga-2011-2012/results/
-# match url: http://www.oddsportal.com/soccer/germany/bundesliga-2003-2004/b-moenchengladbach-munich-1860-Eqm5mCcc/
-# season: http://www.oddsportal.com/soccer/austria/t-mobile-bundesliga-2003-2004/results/
-# http://www.oddsportal.com/soccer/england/premier-league-2013-2014/results/
 main()
